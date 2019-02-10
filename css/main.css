@@ -9,6 +9,8 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
+
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,500,600,700|Lobster+Two:400i&subset=latin-ext');
 html {
     color: #222;
@@ -16,29 +18,168 @@ html {
     line-height: 1.4;
 }
 
+body {
+    color: #23080c;
+    font-family: 'Dosis';
+     }
+
 h1, h2 {
     font-family: 'Lobster Two', cursive;
     font-style: italic;
-}
+        }
 h3{
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
-}
+  }
 p{
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
+}
+.boja {
+    color: #a7204e;
 }
 .navigacija {
     font-weight:500;
 }
 .container {
-    margin: 0px 130px
+    max-width: 1300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 .linija_navigacije {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* ======== HEADER ========== */
+header {
+    padding: 13px 0 8px;
+}
+nav {
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff2f1;
+    text-align: center;
+}
+nav ul {
+    display: table-cell;
+    vertical-align: middle;
+}
+nav li{
+    margin-top: 20px;
+}
+nav a {
+    color: #23080c;
+    font-size: 3.6em;
+    line-height: 70px;
+    padding: 5px 10px;
+}
+nav .close {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    margin: 0;
+    background: transparent;
+    border: none;
+}
+nav .close span {
+    width: 35px;
+    height: 2px;
+    background: #d2b9b9;
+    display: block;
+    transform: rotate(45deg);
+}
+nav .close span:nth-child(2) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
+}
+.header_logo {
+    display: inline-block;
+}
+.burger {
+    width: 44px;
+    height: 25px;
+    padding: 5px 0;
+    float: right;
+    margin-top: 12px;
+}
+.burger span {
+    width: 100%;
+    height: 2px;
+    background-color: #23080c;
+    display: block;
+    margin-top: 9px;
+}
+.burger span:nth-child(1) {
+    margin-top: 0;
+}
+.btn{
+    background-color: #a7204e;
+    color: #ffffff;
+    border-radius: 50px 50px 50px 50px;
+}
+/* ======== HEADER END ========== */
+
+
+
+@media only screen and (min-width: 1024px) {
+    /* ======== HEADER ========== */
+    header {
+        padding: 25px 0 10px;
+    }
+    nav {
+        display: block;
+        position: initial;
+        width: auto;
+        height: auto;
+        background: inherit;
+        float: right;
+    }
+    nav li {
+        float: left;
+    }
+    nav a {
+        color: #23080c;
+        margin-left: 20px;
+    }
+    nav a.active,
+    nav a:hover {
+        color: #23080c;
+        border-bottom: 2.5px solid #a7204e;
+    }
+    nav a,
+    nav a.btn {
+        font-size: 1.8em;
+    }
+    .burger,
+    nav .close,
+    .btn
+    {
+        display: none;
+    }
+    /* ======== HEADER END ========== */
+}
+
+
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
