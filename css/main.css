@@ -47,11 +47,6 @@ p{
     padding-right: 15px;
     margin: 0 auto;
 }
-.linija_navigacije {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 a {
     text-decoration: none;
 }
@@ -60,7 +55,7 @@ a {
 
 
 
-/* ======== HEADER ========== */
+/* ======== HEADER ========== mobile:*/
 header {
     padding: 13px 0 8px;
 }
@@ -73,19 +68,24 @@ nav {
     height: 100%;
     background: #fff2f1;
     text-align: center;
-}
-nav ul {
+    }
+.linija_navigacije {
     display: table-cell;
     vertical-align: middle;
+    list-style: none;
+    margin: 0;
+    padding: 50px 0;
 }
+
 nav li{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 nav a {
     color: #23080c;
-    font-size: 3.6em;
+    font-size: 2em;
     line-height: 70px;
-    padding: 5px 10px;
+    padding: 4px 40px;
+    font-weight: 300;
 }
 nav .close {
     width: 45px;
@@ -140,7 +140,7 @@ nav .close span:nth-child(2) {
 
 
 @media only screen and (min-width: 1024px) {
-    /* ======== HEADER ========== */
+    /* ======== HEADER ========== web */
     header {
         padding: 25px 0 10px;
     }
@@ -152,12 +152,19 @@ nav .close span:nth-child(2) {
         background: inherit;
         float: right;
     }
+    .linija_navigacije {
+        margin: 0;
+        padding: 0;
+    }
     nav li {
         float: left;
+        margin-top: 0px;
     }
     nav a {
         color: #23080c;
-        margin-left: 20px;
+        margin-left: 10px;
+        padding: 5px 10px;
+        font-weight: 500;
     }
     nav a.active,
     nav a:hover {
