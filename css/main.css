@@ -13,7 +13,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,500,600,700|Lobster+Two:400i&subset=latin-ext');
 html {
-    color: #222;
+    color: #23080c;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -29,7 +29,7 @@ h1, h2 {
         }
 h3{
     font-family: 'Dosis', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
   }
 p{
     font-family: 'Dosis', sans-serif;
@@ -42,7 +42,7 @@ p{
     font-weight:500;
 }
 .container {
-    max-width: 1300px;
+    max-width: 900px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -83,7 +83,7 @@ nav li{
 nav a {
     color: #23080c;
     font-size: 2em;
-    line-height: 70px;
+    line-height: 60px;
     padding: 4px 40px;
     font-weight: 300;
 }
@@ -98,6 +98,7 @@ nav .close {
     background: transparent;
     border: none;
 }
+/* ====== prvi deo iksica \  x  :*/
 nav .close span {
     width: 35px;
     height: 2px;
@@ -105,6 +106,7 @@ nav .close span {
     display: block;
     transform: rotate(45deg);
 }
+/* ====== drugi deo iksica / x    :*/
 nav .close span:nth-child(2) {
     transform: rotate(-45deg);
     position: relative;
