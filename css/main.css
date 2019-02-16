@@ -17,23 +17,30 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
+/*ovo uvek stavljam na pocetku::: font-size: 62.5% za realnu veličinu;*/
 body {
+    font-size: 62.5%;
     color: #23080c;
     font-family: 'Dosis';
      }
-
 h1, h2 {
     font-family: 'Lobster Two', cursive;
     font-style: italic;
         }
+h1 { font-size: 6.25em; }
+h2 { font-size: 3.43em; }
 h3{
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
+    font-size: 2.5em;
   }
 p{
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
+    font-size: 2em;
+}
+.izbor_ponude {
+    font-size: 2.8em;
 }
 .boja {
     color: #a7204e;
@@ -41,8 +48,11 @@ p{
 .navigacija {
     font-weight:500;
 }
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 .container {
-    max-width: 900px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -50,11 +60,44 @@ p{
 a {
     text-decoration: none;
 }
-
-
-
-
-
+.futer_sect {
+    background-color: #efe1de;
+}
+.naslov_ponuda {
+    max-width: 551px;
+    margin: 0 auto;
+    text-align: center;
+}
+.podnaslov_ponude{
+    font-size: 2.2em;
+    vertical-align: middle;
+}
+.ponuda_sve3 p{
+    font-size: 2em;
+}
+.izbor_ponude {
+    font-weight: 500;
+    background: #f34949;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    padding: 2px 27px;
+    margin: 0 5px;
+}
+.izbor_ponude:hover,
+.izbor_ponude .aktivno {
+    background-color: #ebcfcf;
+    border-radius: 50px 50px 50px 50px;
+}
+.dugmad_ponude {
+    text-align: center;
+}
+.deo_ponude img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
 /* ======== HEADER ========== mobile:*/
 header {
     padding: 13px 0 8px;
@@ -76,15 +119,14 @@ nav {
     margin: 0;
     padding: 50px 0;
 }
-
 nav li{
     margin-top: 10px;
 }
 nav a {
     color: #23080c;
-    font-size: 2em;
+    font-size: 3em;
     line-height: 60px;
-    padding: 4px 40px;
+    padding: 8px 40px;
     font-weight: 300;
 }
 nav .close {
@@ -136,8 +178,14 @@ nav .close span:nth-child(2) {
     background-color: #a7204e;
     color: #ffffff;
     border-radius: 50px 50px 50px 50px;
+    font-size: 3em;
 }
-/* ======== HEADER END ========== */
+.CTA {
+        background-color: #a7204e;
+    color: #ffffff;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 2.5em;
+    }/* ======== HEADER END ========== */
 
 
 
@@ -182,6 +230,13 @@ nav .close span:nth-child(2) {
     .btn
     {
         display: none;
+    }
+    .CTA {
+        background-color: #a7204e;
+    color: #ffffff;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 2.5em;
+    padding:8px 40px;
     }
     /* ======== HEADER END ========== */
 }
