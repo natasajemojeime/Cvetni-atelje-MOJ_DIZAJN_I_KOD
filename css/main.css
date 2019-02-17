@@ -71,6 +71,7 @@ a {
 .podnaslov_ponude{
     font-size: 2.2em;
     vertical-align: middle;
+    /*padding: 0 70px;*/
 }
 .ponuda_sve3 p{
     font-size: 2em;
@@ -91,19 +92,34 @@ a {
 }
 .dugmad_ponude {
     text-align: center;
+    margin: 30px 0;
 }
 .deo_ponude img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 100%;
 }
+#organizacija, #dekoracija {
+    display: none;
+}
+.deo_ponude {
+    /*width: 30%;*/
+    width: 300px;
+}
+.ponuda {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 /* ======== HEADER ========== mobile:*/
 header {
     padding: 13px 0 8px;
 }
 nav {
     display: table;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -163,6 +179,8 @@ nav .close span:nth-child(2) {
     padding: 5px 0;
     float: right;
     margin-top: 12px;
+    background: transparent;
+    border: none;
 }
 .burger span {
     width: 100%;
@@ -181,10 +199,11 @@ nav .close span:nth-child(2) {
     font-size: 3em;
 }
 .CTA {
-        background-color: #a7204e;
+    background-color: #a7204e;
     color: #ffffff;
     border-radius: 50px 50px 50px 50px;
     font-size: 2.5em;
+    padding:8px 40px;
     }/* ======== HEADER END ========== */
 
 
@@ -232,7 +251,7 @@ nav .close span:nth-child(2) {
         display: none;
     }
     .CTA {
-        background-color: #a7204e;
+    background-color: #a7204e;
     color: #ffffff;
     border-radius: 50px 50px 50px 50px;
     font-size: 2.5em;
