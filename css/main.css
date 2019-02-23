@@ -39,9 +39,7 @@ p{
     font-weight: 300;
     font-size: 2em;
 }
-.izbor_ponude {
-    font-size: 2.8em;
-}
+
 .boja {
     color: #a7204e;
 }
@@ -60,8 +58,15 @@ section {
 a {
     text-decoration: none;
 }
-.futer_sect {
-    background-color: #efe1de;
+.slike{
+    list-style: none;
+    }
+
+
+
+/* ======== PONUDA START================== :*/
+.izbor_ponude {
+    font-size: 2.8em;
 }
 .naslov_ponuda {
     max-width: 551px;
@@ -90,6 +95,11 @@ a {
     background-color: #ebcfcf;
     border-radius: 50px 50px 50px 50px;
 }
+
+#organizacija, #dekoracija {
+    display: none;
+}
+
 .dugmad_ponude {
     text-align: center;
     margin: 30px 0;
@@ -101,10 +111,7 @@ a {
     width: 100%;
     height: auto;
     object-fit: cover;
-    max-height: 200px;
-}
-#organizacija, #dekoracija {
-    display: none;
+    /*max-height: 200px;*/
 }
 .deo_ponude {
     /*width: 30%;*/
@@ -115,15 +122,32 @@ a {
     flex-flow: row wrap;
     justify-content: space-around;
 }
+/* ======== PONUDA END========== :*/
 
 
-/* ======== HEADER ========== mobile:*/
+
+
+/* ======== GaleRIJA START================== :*/
+.slike {
+    display: flex;
+    flex-flow: row wrap;
+}
+.slike img{
+    padding: 15px;
+}
+
+/* ======== GALERIJA END========== :*/
+
+
+
+
+/* ======== HEADER ================== mobile:*/
 header {
     padding: 13px 0 8px;
 }
 nav {
     display: table;
-    display: none;
+    display: none;    /* ======== kad ovo zakomentarisem pojavi se mobilni meni ========== mobile:*/
     position: fixed;
     top: 0;
     left: 0;
@@ -223,7 +247,24 @@ nav .close span:nth-child(2) {
 
     /* ======== HEADER END ========== */
 
+/* ======== FUTER START ================== */
+.futer_sect ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        list-style: none;
 
+}
+.futer_sect {
+    padding: 50px 0;
+    background-color: #efe1de;
+}
+/* ======== FUTER END ========== */
+
+
+.naslov_gal_nam{
+    text-align: center;
+}
 
 @media only screen and (min-width: 1024px) {
     /* ======== HEADER ========== web */
@@ -285,9 +326,6 @@ nav .close span:nth-child(2) {
             }
     /* ======== HEADER END ========== */
 }
-
-
-
 
 /*
  * Remove text-shadow in selection highlight:
