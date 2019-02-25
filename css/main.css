@@ -131,13 +131,23 @@ a {
 .slike {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 .slike img{
     padding: 15px;
+    max-width: 300px;
+    max-width: 300px;
 }
-
+.galerija {
+    max-width: 1180px;
+    /*margin: 0 auto;*/
+    background-color: #efe1de;
+}
+ul {
+    margin:0;
+    padding: 0;
+}
 /* ======== GALERIJA END========== :*/
-
 
 
 
@@ -325,6 +335,9 @@ nav .close span:nth-child(2) {
             padding: 8px 0px;
             }
     /* ======== HEADER END ========== */
+
+
+
 }
 
 /*
