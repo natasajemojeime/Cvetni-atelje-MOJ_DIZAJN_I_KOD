@@ -140,7 +140,6 @@ a {
 }
 .galerija {
     max-width: 1180px;
-    /*margin: 0 auto;*/
     background-color: #efe1de;
 }
 ul {
@@ -275,7 +274,6 @@ nav .close span:nth-child(2) {
 .naslov_gal_nam{
     text-align: center;
 }
-
 @media only screen and (min-width: 1024px) {
     /* ======== HEADER ========== web */
     header {
