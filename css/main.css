@@ -28,7 +28,8 @@ h1, h2 {
     font-style: italic;
         }
 h1 { font-size: 6.25em; }
-h2 { font-size: 3.43em; }
+h2 { font-size: 3.43em; 
+    margin:0;}
 h3{
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
@@ -47,13 +48,17 @@ p{
     font-weight:500;
 }
 section {
-    max-width: 1000px;
+    /*max-width: 1000px;*/
+    /*max-width: 1366px;*/
+    /*nije potrebno na sekciji samo na containeru sirina*/
     margin: 0 auto;
 }
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+   /* max-width: 1099px;*/
+   max-width: 1000px;
 }
 a {
     text-decoration: none;
@@ -62,7 +67,12 @@ a {
     list-style: none;
     }
 
-
+/*.hero {
+    background-image: url(../img/1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
 
 /* ======== PONUDA START================== :*/
 .izbor_ponude {
@@ -111,7 +121,6 @@ a {
     width: 100%;
     height: auto;
     object-fit: cover;
-    /*max-height: 200px;*/
 }
 .deo_ponude {
     /*width: 30%;*/
@@ -123,7 +132,6 @@ a {
     justify-content: space-around;
 }
 /* ======== PONUDA END========== :*/
-
 
 
 
@@ -139,14 +147,48 @@ a {
     max-width: 300px;
 }
 .galerija {
-    max-width: 1180px;
-    background-color: #efe1de;
+    position: relative;
+    padding: 100px 0;
+}
+.galerija:before,
+.galerija:after {
+    content: '';
+    position: absolute;
+    background: #efe1de;
+    width: 100%;
+    height: 100%;
+    transform: skewY(14.5deg);
+    z-index: -2;
+}
+.galerija:before {
+    top: 0;
+}
+.galerija:after {
+    top: 5%;
 }
 ul {
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 /* ======== GALERIJA END========== :*/
+
+
+
+
+
+/* ======== FUTER START ================== */
+
+.footer_lista img {
+    color: red;
+}
+.footer_lista p{
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+
+/* ======== FUTER end ================== */
+
 
 
 
@@ -181,7 +223,7 @@ nav a {
     line-height: 60px;
     padding: 8px 40px;
     font-weight: 300;
-}
+    }
 nav .close {
     width: 45px;
     height: 45px;
@@ -192,7 +234,7 @@ nav .close {
     margin: 0;
     background: transparent;
     border: none;
-}
+    }
 /* ====== prvi deo iksica \  x  :*/
 nav .close span {
     width: 35px;
@@ -200,16 +242,16 @@ nav .close span {
     background: #d2b9b9;
     display: block;
     transform: rotate(45deg);
-}
+    }
 /* ====== drugi deo iksica / x    :*/
 nav .close span:nth-child(2) {
     transform: rotate(-45deg);
     position: relative;
     top: -2px;
-}
+    }
 .header_logo {
     display: inline-block;
-}
+    }
 .burger {
     width: 44px;
     height: 25px;
@@ -218,23 +260,23 @@ nav .close span:nth-child(2) {
     margin-top: 12px;
     background: transparent;
     border: none;
-}
+    }
 .burger span {
     width: 100%;
     height: 2px;
     background-color: #23080c;
     display: block;
     margin-top: 9px;
-}
+    }
 .burger span:nth-child(1) {
     margin-top: 0;
-}
+    }
 .btn{
     background-color: #a7204e;
     color: #ffffff;
     border-radius: 50px 50px 50px 50px;
     font-size: 3em;
-}
+    }
 .CTA {
     background-color: #a7204e;
     color: #ffffff;
@@ -251,7 +293,7 @@ nav .close span:nth-child(2) {
     max-width: 200px;
     display: block;
     padding: 8px 0px;
-            }
+    }
 
 
     /* ======== HEADER END ========== */
@@ -262,18 +304,31 @@ nav .close span:nth-child(2) {
         flex-flow: row wrap;
         justify-content: space-around;
         list-style: none;
+        padding-top: 45px;
 
+}
+.futer_sect li{
+    /*padding: 0 8px;*/
+    padding-right: 16px;
 }
 .futer_sect {
     padding: 50px 0;
     background-color: #efe1de;
+}
+.razmak1{
+    padding-bottom: 15px;
+}
+.razmak {
+    padding-bottom:45px;
 }
 /* ======== FUTER END ========== */
 
 
 .naslov_gal_nam{
     text-align: center;
+     padding-bottom: 40px 
 }
+
 @media only screen and (min-width: 1024px) {
     /* ======== HEADER ========== web */
     header {
