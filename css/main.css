@@ -40,7 +40,10 @@ p{
     font-weight: 300;
     font-size: 2em;
 }
-
+ul {
+    margin: 0;
+    padding: 0;
+}
 .boja {
     color: #a7204e;
 }
@@ -67,12 +70,13 @@ a {
     list-style: none;
     }
 
-/*.hero {
+.hero {
     background-image: url(../img/1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-}*/
+    padding:80px;
+}
 
 /* ======== PONUDA START================== :*/
 .izbor_ponude {
@@ -150,25 +154,42 @@ a {
     position: relative;
     padding: 100px 0;
 }
-.galerija:before,
-.galerija:after {
+.galerija:before/*,
+.galerija:after*/ {
     content: '';
     position: absolute;
     background: #efe1de;
     width: 100%;
-    height: 100%;
+    height: 97%;
     transform: skewY(14.5deg);
     z-index: -2;
 }
 .galerija:before {
-    top: 0;
+    top: 7%;
+    content:'';
 }
-.galerija:after {
+/*.galerija:after {
     top: 5%;
+    content: 'wwwwwww';
+}*/
+
+.galll:before{
+    content:url(../img/cvetic.png);
+    left: 63%;
+    top:-25%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
-ul {
-    margin: 0;
-    padding: 0;
+.galll:after{
+    content:url(../img/cveticdrugi.png);
+    left: -12%;
+    top: 80%;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
 }
 /* ======== GALERIJA END========== :*/
 
