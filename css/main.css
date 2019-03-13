@@ -72,13 +72,19 @@ a {
 
 .hero {
     background-image: url(../img/1.jpg);
-    background-size: 100%;
+    /*background-size: 100%;*/
     background-repeat: no-repeat;
     background-position: center;
     padding:80px;
+    min-height: 350px;
+    background-size: cover;
+
 }
 
 /* ======== PONUDA START================== :*/
+.ponuda_sec{
+    padding-top: 30px;
+}
 .izbor_ponude {
     font-size: 2.8em;
 }
@@ -153,6 +159,7 @@ a {
 .galerija {
     position: relative;
     padding: 100px 0;
+
 }
 .galerija:before/*,
 .galerija:after*/ {
@@ -230,6 +237,7 @@ a {
     font-weight: 600;
     color: #efe1de;
     margin: auto;
+    border-radius: 50%;
 }
 
 
@@ -249,7 +257,9 @@ a {
     display: flex;
     margin: 0;
 }
-
+.razmak {
+    padding-bottom: 15px;
+}
 /* ======== FUTER end ================== */
 
 
