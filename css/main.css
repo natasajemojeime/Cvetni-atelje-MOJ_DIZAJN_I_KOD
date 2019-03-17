@@ -22,7 +22,11 @@ body {
     font-size: 62.5%;
     color: #23080c;
     font-family: 'Dosis';
-     }
+
+    width: 100%;
+    overflow-x: hidden;
+}
+
 h1, h2 {
     font-family: 'Lobster Two', cursive;
     font-style: italic;
@@ -159,6 +163,7 @@ a {
 .galerija {
     position: relative;
     padding: 100px 0;
+    /*overflow: hidden;*/
 
 }
 .galerija:before/*,
@@ -181,18 +186,18 @@ a {
 }*/
 
 .galll:before{
-    content:url(../img/cvetic.png);
-    left: 63%;
-    top:-25%;
+    content:url(../img/srednjaD.png);
+    left: 55%;
+    top:-6%;
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
 .galll:after{
-    content:url(../img/cveticdrugi.png);
-    left: -12%;
-    top: 80%;
+    content:url(../img/srednjaL.png);
+    left: -40%;
+    top: 90%;
     position: absolute;
     width: 100%;
     height: 50%;
@@ -398,8 +403,98 @@ nav .close span:nth-child(2) {
 
 
 
+/* ======== Modal  ========== */
+.modal {
+    /*display: none;*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.modal.open {
+    display: block;
+}
+.modal-wrap {
+    max-width: 870px;
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    overflow-y: auto;
+}
+.modal-wrap > * {
+    display: inline-block;
+}
+.modal-wrap .close span {
+    background-color: #d2b9b9;
+}
+.modal-wrap h3 {
+    color: #23080c;
+    width: 100%;
+}
+.modal-inner {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+input {
+    border: 1px solid #23080c;
+    width: 100%;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+input::placeholder {
+  color: #d6d6d6;
+  font-size: 16px;
+  font-style: italic;
+}
+input:focus {
+    outline: none;
+    border-color: red;
+}
+input.btn {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 13px 15px;
+}
+ input[type="date"]:before,
+ input[type="time"]:before {
+    content: attr(placeholder) !important;
+    color: #d6d6d6;
+    font-style: italic;
+    margin-right: 0.5em;
+  }
+/* ======== Modal end  ========== */
+
+
+@media only screen and (max-width: 600px) {
+/* ===odnosi se na maksimalnu sirinu ekrana od 600px i manje ekrane=== */
+.galerija:before{
+    height: 94%;
+    transform: skewY(14.5deg);
+    top: 5%;
+    }
+.galll:before{
+    left: 33%;
+    top:-1.5%;
+    }
+.galll:after{
+    left: -60%;
+    top: 95%;
+    }
+}
+
 
 @media only screen and (min-width: 1024px) {
+    /* ===odnosi se na ekrane sa minimalnom sirinom od 1024px i ya vece od toga ekrane=== */
     /* ======== HEADER ========== web */
     header {
         padding: 25px 0 10px;
@@ -456,10 +551,23 @@ nav .close span:nth-child(2) {
             max-width: 200px;
             display: block;
             padding: 8px 0px;
-            }
-    /* ======== HEADER END ========== */
+    }
 
-
+ /* ======== HEADER END ========== */
+.galll:before{
+    content:url(../img/cvetic.png);
+    left: 63%;
+    top:-25%;
+    width: 100%;
+    height: 100%;
+}
+.galll:after{
+    content:url(../img/cveticdrugi.png);
+    left: -24%;
+    top: 80%;
+    width: 100%;
+    height: 50%;
+}
 
 }
 
