@@ -271,38 +271,38 @@
 </footer>
 </section>
 
-
+<!-- Ovde pocinje MODAL-->
 <div class="modal">
     <div class="modal-wrap text-center">
       <div class="modal-inner">
         <img src="img/logo.png" alt="Cvetni Atelje San">
-        <h3>Odaberite za šta želite da nas angažujete</h3>
+        <h3>Odaberite za šta želite da nas angažujete:</h3>
         <form>
           <fieldset>
-
-            <ul>
+    
+            <ul class="ponuda_modal">
               <li>
-                  <input type='radio' value='aranzmani' name='ponuda' id='radio1'/>
+                  <input type='radio' value='Aranžmani' name='ponuda' id='radio1'/>
                   <label for='radio1'>Aranžmani</label>
               </li>
               <li>
-                      <input type='radio' value='organizacija' name='ponuda'  id='radio2'/>
+                      <input type='radio' value='Organizacija' name='ponuda'  id='radio2'/>
                       <label for='radio2'>Organizacija</label>
               </li>
               <li>
-                      <input type='radio' value='dekoracija' name='ponuda'  id='radio3'/>
+                      <input type='radio' value='Dekoracija' name='ponuda'  id='radio3'/>
                       <label for='radio3'>Dekoracija</label>
               </li>
             </ul>
           
 
-            <input type="date" name="zeljeni_datum" placeholder="unesite zeljeni datum">
+            <input type="text" id="datum" name="zeljeni_datum" placeholder="unesite željeni datum">
 
             <input type="text" name="ime" placeholder="unesite ime" class="width__2">
 
             <input type="number" name="telefon" placeholder="kontakt telefon">
 
-            <input type="text" name="pismo" placeholder="recite nam vise">
+            <input class="vise" type="text" name="pismo" placeholder="recite nam više">
 
             <input type="submit" value="slanje" class="btn">
 
@@ -321,6 +321,14 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+
+<!--izgled date pickera ispod -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </script>
 </body>
 
 </html>
