@@ -79,9 +79,8 @@ a {
     /*background-size: 100%;*/
     background-repeat: no-repeat;
     background-position: center;
-    /*padding:80px;*/
     padding: 30px;
-    /*min-height: 350px;*/
+    min-height: 350px;
     background-size: cover;
 
 }
@@ -414,9 +413,9 @@ nav .close span:nth-child(2) {
     max-height: 90%;
     overflow-y: auto;
 }
-.modal-wrap .close12 span {
+/*.modal-wrap .close12 span {
     background-color: #ebcfcf;
-}
+}*/
 .modal-wrap h3 {
     text-align: center;
     font-family: 'Dosis';
