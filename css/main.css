@@ -31,7 +31,8 @@ h1, h2 {
     font-family: 'Lobster Two', cursive;
     font-style: italic;
         }
-h1 { font-size: 6.25em; }
+h1 { font-size: 6.25em;
+    margin:40px 0px 0px; }
 h2 { font-size: 3.43em; 
     margin:0;}
 h3{
@@ -75,7 +76,7 @@ a {
     }
 
 .hero {
-    background-image: url(../img/mob1.jpg);
+    /*background-image: url(../img/mob1.jpg);*/
     /*background-size: 100%;*/
     background-repeat: no-repeat;
     background-position: center;
@@ -84,7 +85,15 @@ a {
     background-size: cover;
 }
 
-
+.prvi_slajd{
+    background-image: url(../img/mob1.jpg);
+}
+.drugi_slajd{
+    background-image: url(../img/mob1.jpg);
+}
+.treci_slajd{
+    background-image: url(../img/mob1.jpg);
+}
 /* ======== flex slajder================== :*/
 
 .flex-control-nav{
@@ -104,7 +113,9 @@ a {
 .flex-control-paging li a:hover{
     background: #a7204e;
 }
-
+.flexslider {
+    margin: 0px;
+}
 
 /* ======== PONUDA START================== :*/
 .ponuda_sec{
@@ -135,14 +146,14 @@ a {
     margin: 0 5px;
 }
 .izbor_ponude:hover,
-.izbor_ponude .aktivno {
+.izbor_ponude.aktivno {
     background-color: #ebcfcf;
     border-radius: 50px 50px 50px 50px;
 }
 
-#organizacija, #dekoracija {
+/*#organizacija, #dekoracija {
     display: none;
-}
+}*/
 
 .dugmad_ponude {
     text-align: center;

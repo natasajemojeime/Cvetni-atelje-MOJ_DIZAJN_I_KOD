@@ -36,3 +36,17 @@ $(window).on('load',function() {
   });
 });
 /* ======== slajder END========== */
+
+
+/* ======== menjanje ponude na tri dugmeta========== */
+$('.ponuda').hide();
+$('#aranzmani').show();
+$('.izbor_ponude').click(function(e) {
+    e.preventDefault();
+    $('.izbor_ponude').removeClass('aktivno');
+    $(this).addClass('aktivno');
+    $('.ponuda').hide();
+    $('#' + $(this).attr('title')).show();
+});
+/* ======== ponuda END========== */
+
