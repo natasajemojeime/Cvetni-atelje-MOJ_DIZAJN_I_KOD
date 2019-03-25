@@ -82,8 +82,29 @@ a {
     padding: 30px;
     min-height: 350px;
     background-size: cover;
-
 }
+
+
+/* ======== flex slajder================== :*/
+
+.flex-control-nav{
+    bottom: 16px;
+}
+
+.flex-control-paging li a.flex-active {
+        background: #a7204e;
+    cursor: default;
+    /*border: 3px solid green;*/
+    border: 3px solid rgba(255, 255, 255, .64);
+}
+.flex-control-paging li a{
+    background:rgba(255, 255, 255, .64);
+    box-shadow: none;
+}
+.flex-control-paging li a:hover{
+    background: #a7204e;
+}
+
 
 /* ======== PONUDA START================== :*/
 .ponuda_sec{
@@ -516,13 +537,22 @@ input:checked + label {
 
  /* ======== GALERIJA ========== */
 .hero {
-    background-image: url(../img/1.jpg);
+    /*background-image: url(../img/1.jpg);*/
     /*background-size: 100%;*/
     background-repeat: no-repeat;
     background-position: center;
     padding:80px;
     min-height: 350px;
     background-size: cover;
+}
+.prvi_slajd{
+    background-image: url(../img/1.jpg);
+}
+.drugi_slajd{
+    background-image: url(../img/2.jpg);
+}
+.treci_slajd{
+    background-image: url(../img/3.jpg);
 }
 
 .galerija:before{

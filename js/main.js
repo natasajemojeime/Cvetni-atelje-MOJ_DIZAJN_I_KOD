@@ -26,3 +26,13 @@ $('.modal .close').on('click', function(event) {
   $('.modal').removeClass('open');
 });
 /* ======== modal open i close END========== */
+
+
+
+/* ======== slajder END========== */
+$(window).on('load',function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+/* ======== slajder END========== */

@@ -12,8 +12,10 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  
 </head>
 
 <!-- Ovo je komentar, nije vidljiv na web-u.-->
@@ -58,8 +60,8 @@
   </header>
 </section>
 
-<!-- Ovde pocinje Hero section -->
-  <section>
+<!-- Ovde pocinje Hero section bez slajdera -->
+<!-- <section>
   <div class="container hero">
     <h1>Cvetni Atelje San</h1>
     <p>
@@ -67,7 +69,55 @@
     </p>
     <a class="CTA cta_levo" href="">Angažujte nas</a>
   </div>
+</section> -->
+
+
+<!-- Ovde pocinje Hero section sa slajderom -->
+
+<!-- sa diva sam skinula class container -->
+  <section>
+  <div class="flexslider">
+    <ul class="slides">
+      <li> 
+        <div class="hero prvi_slajd">
+        <h1>Cvetni Atelje San</h1>
+        <p>
+        Cveće u naše živote unosi neizbrisiv trenutak sreće. <br> Uz našu pomoć pretvorite trenutak u bajku.
+        </p>
+        <a class="CTA cta_levo" href="">Angažujte nas</a>
+        </div>
+      </li>
+
+      <li>
+      <div class="hero drugi_slajd">
+        <h1>Uvek najlepše cveće</h1>
+        <p>
+        Izrađujemo jedinstvene cvetne aranžmane od različitih vrsta cveća za sve prilike.
+        </p>
+        <a class="CTA cta_levo" href="">Angažujte nas</a>
+      </div>
+      </li>
+
+      <li>
+        <div class="hero treci_slajd">
+          <h1>Kreirajmo zajedno</h1>
+          <p>
+          Organizacija i dekoracija svih vrsta proslava i događaja.
+          </p>
+          <a class="CTA cta_levo" href="">Angažujte nas</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
+
+
+      
+
+
+
+
+
 
 <!-- Ovde pocinje PONUDA section -->
 <section class="ponuda_sec" id="ponuda">
@@ -325,8 +375,11 @@
 <!--izgled date pickera je ispod -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
 
+
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+<!--izgled slajdera je ispod i ovo uvek ide ispid jquerija jer je ovo plagin -->
+<script src="js/jquery.flexslider.js"></script>
   </script>
 </body>
 
