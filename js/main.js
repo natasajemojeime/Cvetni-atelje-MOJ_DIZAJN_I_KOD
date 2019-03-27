@@ -29,7 +29,7 @@ $('.modal .close').on('click', function(event) {
 
 
 
-/* ======== slajder END========== */
+/* ======== slajder========== */
 $(window).on('load',function() {
   $('.flexslider').flexslider({
     animation: "slide"
@@ -50,3 +50,43 @@ $('.izbor_ponude').click(function(e) {
 });
 /* ======== ponuda END========== */
 
+
+
+
+
+
+
+
+
+
+
+/* ======== navigacija========== */
+$('.burger').on('click', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  // $('.navigacija').addClass('open');
+  // openNav();
+   document.getElementById("navigacija").style.display = "block";
+ });
+$('.navigacija .close').on('click', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  // $('.navigacija').removeClass('open');
+  // closeNav();
+  document.getElementById("navigacija").style.display = "none";
+});
+/* ======== mavigacija end========== */
+
+
+
+
+
+// /* Open */
+// function openNav() {
+//   document.getElementById("navigacija").style.display = "block";
+// }
+
+// /* Close */
+// function closeNav() {
+//   document.getElementById("navigacija").style.display = "none";
+// }

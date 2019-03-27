@@ -296,7 +296,7 @@ header {
 }
 nav {
     display: table;
-    display: none; /* === kad ovo zakomentarisem pojavi se mobilni meni ========== mobile:*/
+    display: none;  /*=== kad ovo zakomentarisem pojavi se mobilni meni ========== mobile:*/
     position: fixed;
     top: 0;
     left: 0;
@@ -569,7 +569,8 @@ input:checked + label {
 .galerija:before{
     height: 94%;
     transform: skewY(14.5deg);
-    top: 6%;
+    /*top: 6%;*/
+    top:9%;
     }
 .galll:before{
     content: "";
@@ -651,7 +652,9 @@ input:checked + label {
     }
 
 /* ======== HEADER END ========== */
-
+.hero {
+    padding: 5% 15%;
+}
 /* ======== GAlerija ========== */
 .galll:before{
     content:"";
@@ -663,7 +666,7 @@ input:checked + label {
 }
 .galll:after{
     content:url(../img/cveticdrugi.png);
-    left: -35%;
+    left: -25%;
     top: 80%;
     width: 100%;
     height: 50%;
