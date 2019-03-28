@@ -11,7 +11,8 @@
    ========================================================================== */
 
 
-@import url('https://fonts.googleapis.com/css?family=Dosis:300,500,600,700|Lobster+Two:400i&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,500,600,700|Lobster');
+
 html {
     color: #23080c;
     font-size: 1em;
@@ -31,8 +32,9 @@ h1, h2 {
     font-family: 'Lobster Two', cursive;
     font-style: italic;
         }
-h1 { font-size: 6.25em;
-    margin:40px 0px 0px; }
+h1 { font-size: 4.25em;
+    margin:20px 0px 0px;
+     }
 h2 { font-size: 3.43em; 
     margin:0;}
 h3{
@@ -52,20 +54,14 @@ ul {
 .boja {
     color: #a7204e;
 }
-.navigacija {
-    font-weight:500;
-}
 section {
-    /*max-width: 1000px;*/
-    /*max-width: 1366px;*/
-    /*nije potrebno na sekciji samo na containeru sirina*/
+    /*nije potrebno na sekciji definisati širinu, širina je potrebna samo na containeru*/
     margin: 0 auto;
 }
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-   /* max-width: 1099px;*/
    max-width: 1000px;
 }
 a {
@@ -84,7 +80,6 @@ a {
     min-height: 350px;
     background-size: cover;
 }
-
 .prvi_slajd{
     background-image: url(../img/mob1.jpg);
 }
@@ -94,12 +89,12 @@ a {
 .treci_slajd{
     background-image: url(../img/mob1.jpg);
 }
+
 /* ======== flex slajder================== :*/
 
 .flex-control-nav{
     bottom: 16px;
 }
-
 .flex-control-paging li a.flex-active {
         background: #a7204e;
     cursor: default;
@@ -116,6 +111,18 @@ a {
 .flexslider {
     margin: 0px;
 }
+.flex-direction-nav a:before{
+    color: #23080c;
+}
+.flex-direction-nav a {
+    height: 50px;
+    width: 40px;
+}
+
+
+
+
+/* ======== flex slajder END========== :*/
 
 /* ======== PONUDA START================== :*/
 .ponuda_sec{
@@ -150,11 +157,9 @@ a {
     background-color: #ebcfcf;
     border-radius: 50px 50px 50px 50px;
 }
-
 /*#organizacija, #dekoracija {
     display: none;
 }*/
-
 .dugmad_ponude {
     text-align: center;
     margin: 30px 0;
@@ -271,7 +276,6 @@ a {
 }
 /* ======== O NAMA -END========== :*/
 
-
 /* ======== FUTER START ================== */
 
 .footer_lista img {
@@ -294,9 +298,14 @@ a {
 header {
     padding: 13px 0 8px;
 }
+.navigacija {
+    font-weight:500;
+    display: none;
+}
+.navigacija.open {
+display: table;
+}
 nav {
-    display: table;
-    display: none;  /*=== kad ovo zakomentarisem pojavi se mobilni meni ========== mobile:*/
     position: fixed;
     top: 0;
     left: 0;
@@ -304,6 +313,7 @@ nav {
     height: 100%;
     background: #fff2f1;
     text-align: center;
+    z-index: 100;
     }
 .linija_navigacije {
     display: table-cell;
@@ -392,8 +402,7 @@ nav .close span:nth-child(2) {
     display: block;
     padding: 8px 0px;
     }
-
-    /* ======== HEADER END ========== */
+/* ======== HEADER END ========== */
 
 /* ======== FUTER START ================== */
 .futer_sect ul {
@@ -485,7 +494,14 @@ input.btn {
     background-color: #ebcfcf;
     min-height: 70px;
     margin-bottom: 35px;
+    width: 97%;
+    font-size: 2.2em;
+    font-weight: 300;
 }
+textarea::placeholder{
+    padding-left: 10px;
+}
+
 /* ======== tri dugmeta ponude u modalu start ========== */
 .ponuda_modal {
     list-style: none;
@@ -592,13 +608,18 @@ input:checked + label {
 
 
 @media only screen and (min-width: 1024px) {
-    /* ===odnosi se na ekrane sa minimalnom sirinom od 1024px i za vece od toga ekrane=== */
+    /* ===odnosi se na ekrane sa minimalnom širinom od 1024px i za vece od toga ekrane=== */
     /* ======== HEADER ========== web */
+    h1 { font-size: 6.25em;
+   }
     header {
         padding: 25px 0 10px;
     }
-    nav {
+    .navigacija,
+    .navigacija.open {
         display: block;
+    }
+    nav {
         position: initial;
         width: auto;
         height: auto;
