@@ -67,9 +67,6 @@ section {
 a {
     text-decoration: none;
 }
-.slike{
-    list-style: none;
-    }
 
 .hero {
     /*background-image: url(../img/mob1.jpg);*/
@@ -84,10 +81,10 @@ a {
     background-image: url(../img/mob1.jpg);
 }
 .drugi_slajd{
-    background-image: url(../img/mob1.jpg);
+    background-image: url(../img/mob2.jpg);
 }
 .treci_slajd{
-    background-image: url(../img/mob1.jpg);
+    background-image: url(../img/mob3.png);
 }
 
 /* ======== flex slajder================== :*/
@@ -173,8 +170,8 @@ a {
     object-fit: cover;
 }
 .deo_ponude {
-    /*width: 30%;*/
-    width: 300px;
+    width: 47%;
+    /*width: 300px;*/
 }
 .ponuda {
     display: flex;
@@ -186,15 +183,28 @@ a {
 
 /* ======== GaleRIJA START================== :*/
 .slike {
+    list-style: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 .slike img{
-    padding: 15px;
-    max-width: 300px;
-    max-width: 300px;
+    /*padding: 10px 0;*/
+    /*max-width: 300px;*/
+    width: 100%;
 }
+.slike li{
+    padding: 10px 0;
+    width: 47%;
+    max-width: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+
+
+
 .galerija {
     position: relative;
     padding: 100px 0;
@@ -276,20 +286,6 @@ a {
 }
 /* ======== O NAMA -END========== :*/
 
-/* ======== FUTER START ================== */
-
-.footer_lista img {
-    color: red;
-}
-.footer_lista p{
-    justify-content: center;
-    display: flex;
-    margin: 0;
-}
-.razmak {
-    padding-bottom: 15px;
-}
-/* ======== FUTER end ================== */
 
 
 
@@ -425,7 +421,18 @@ nav .close span:nth-child(2) {
 .razmak {
     padding-bottom:45px;
 }
-/* ======== FUTER END ========== */
+.footer_lista img {
+    color: red;
+}
+.footer_lista p{
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+/* ======== FUTER end ================== */
+
+
+
 
 
 
@@ -497,9 +504,11 @@ input.btn {
     width: 97%;
     font-size: 2.2em;
     font-weight: 300;
+    border: solid #ebcfcf;
 }
 textarea::placeholder{
     padding-left: 10px;
+    color: #b37e7e;
 }
 
 /* ======== tri dugmeta ponude u modalu start ========== */
@@ -603,7 +612,16 @@ input:checked + label {
     left: -30%;
     top: 95%;
     }
+.deo_ponude {
+    width: 30%;
+    /*width: 300px;*/
+    }
+.slike li{
+    width: 30%;
+    padding: 15px 0;
 }
+}
+
 /* ======== GALERIJA END ========== */
 
 
@@ -674,7 +692,7 @@ input:checked + label {
 
 /* ======== HEADER END ========== */
 .hero {
-    padding: 5% 15%;
+    padding: 5% 20%;
 }
 /* ======== GAlerija ========== */
 .galll:before{
