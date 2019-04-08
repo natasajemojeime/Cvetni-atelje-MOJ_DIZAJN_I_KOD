@@ -10,20 +10,19 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,500,600,700|Lobster');
-
 html {
     color: #23080c;
     font-size: 1em;
     line-height: 1.4;
 }
+
 /*ovo uvek stavljam na pocetku::: font-size: 62.5% za realnu veličinu;*/
+
 body {
     font-size: 62.5%;
     color: #23080c;
     font-family: 'Dosis';
-
     width: 100%;
     overflow-x: hidden;
 }
@@ -31,39 +30,51 @@ body {
 h1, h2 {
     font-family: 'Lobster Two', cursive;
     font-style: italic;
-        }
-h1 { font-size: 4.25em;
-    margin:20px 0px 0px;
-     }
-h2 { font-size: 3.43em; 
-    margin:0;}
-h3{
+}
+
+h1 {
+    font-size: 4.25em;
+    margin: 20px 0px 0px;
+}
+
+h2 {
+    font-size: 3.43em;
+    margin: 0;
+}
+
+h3 {
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
     font-size: 2.5em;
-  }
-p{
+}
+
+p {
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
     font-size: 2em;
 }
+
 ul {
     margin: 0;
     padding: 0;
 }
+
 .boja {
     color: #a7204e;
 }
+
 section {
     /*nije potrebno na sekciji definisati širinu, širina je potrebna samo na containeru*/
     margin: 0 auto;
 }
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-   max-width: 1000px;
+    max-width: 1000px;
 }
+
 a {
     text-decoration: none;
 }
@@ -77,69 +88,81 @@ a {
     min-height: 350px;
     background-size: cover;
 }
-.prvi_slajd{
+
+.prvi_slajd {
     background-image: url(../img/mob1.jpg);
 }
-.drugi_slajd{
+
+.drugi_slajd {
     background-image: url(../img/mob2.jpg);
 }
-.treci_slajd{
+
+.treci_slajd {
     background-image: url(../img/mob3.png);
 }
 
 /* ======== flex slajder================== :*/
 
-.flex-control-nav{
+.flex-control-nav {
     bottom: 16px;
 }
+
 .flex-control-paging li a.flex-active {
-        background: #a7204e;
+    background: #a7204e;
     cursor: default;
     /*border: 3px solid green;*/
     border: 3px solid rgba(255, 255, 255, .64);
 }
-.flex-control-paging li a{
-    background:rgba(255, 255, 255, .64);
+
+.flex-control-paging li a {
+    background: rgba(255, 255, 255, .64);
     box-shadow: none;
 }
-.flex-control-paging li a:hover{
+
+.flex-control-paging li a:hover {
     background: #a7204e;
 }
+
 .flexslider {
     margin: 0px;
 }
-.flex-direction-nav a:before{
+
+.flex-direction-nav a:before {
     color: #23080c;
 }
+
 .flex-direction-nav a {
     height: 50px;
     width: 40px;
 }
 
-
-
-
 /* ======== flex slajder END========== :*/
 
 /* ======== PONUDA START================== :*/
-.ponuda_sec{
+
+.ponuda_sec {
     padding-top: 30px;
 }
+
 .izbor_ponude {
     font-size: 2.8em;
 }
+
 .naslov_ponuda {
     max-width: 551px;
     margin: 0 auto;
     text-align: center;
 }
-.podnaslov_ponude{
+
+.podnaslov_ponude {
     font-size: 2.2em;
     vertical-align: middle;
 }
-.ponuda_sve3 p{
+
+.ponuda_sve3 p {
     font-size: 2em;
 }
+
 .izbor_ponude {
     font-weight: 500;
     background: #f34949;
@@ -149,18 +172,21 @@ a {
     padding: 2px 27px;
     margin: 0 5px;
 }
-.izbor_ponude:hover,
-.izbor_ponude.aktivno {
+
+.izbor_ponude:hover, .izbor_ponude.aktivno {
     background-color: #ebcfcf;
     border-radius: 50px 50px 50px 50px;
 }
+
 /*#organizacija, #dekoracija {
     display: none;
 }*/
+
 .dugmad_ponude {
     text-align: center;
     margin: 30px 0;
 }
+
 .deo_ponude img {
     display: block;
     margin-left: auto;
@@ -169,31 +195,36 @@ a {
     height: auto;
     object-fit: cover;
 }
+
 .deo_ponude {
     width: 47%;
     /*width: 300px;*/
 }
+
 .ponuda {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
+
 /* ======== PONUDA END========== :*/
 
-
 /* ======== GaleRIJA START================== :*/
+
 .slike {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
-.slike img{
+
+.slike img {
     /*padding: 10px 0;*/
     /*max-width: 300px;*/
     width: 100%;
 }
-.slike li{
+
+.slike li {
     padding: 10px 0;
     width: 47%;
     max-width: 300px;
@@ -201,17 +232,17 @@ a {
     box-sizing: border-box;
 }
 
-
-
-
-
 .galerija {
     position: relative;
     padding: 100px 0;
     /*overflow: hidden;*/
 }
-.galerija:before/*,
-.galerija:after*/ {
+
+.galerija:before
+/*,
+.galerija:after*/
+
+    {
     content: '';
     position: absolute;
     background: #efe1de;
@@ -220,24 +251,27 @@ a {
     transform: skewY(14.5deg);
     z-index: -2;
 }
+
 .galerija:before {
     top: 3%;
-    content:'';
+    content: '';
 }
-.galll:before{
+
+.galll:before {
     /*content:url(../img/cveticmanji.png);*/
     content: "";
     /*left: 30%;*/
     left: 0;
-    top:-2%;
+    top: -2%;
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background:url(../img/cveticmanji.png) no-repeat;
+    background: url(../img/cveticmanji.png) no-repeat;
 }
-.galll:after{
-    content:url(../img/cveticdrugimanji.png);
+
+.galll:after {
+    content: url(../img/cveticdrugimanji.png);
     left: -60%;
     top: 95%;
     position: absolute;
@@ -245,31 +279,36 @@ a {
     height: 50%;
     z-index: -1;
 }
+
 /* ======== GALERIJA END========== :*/
 
-
 /* ======== O NAMA -START========== :*/
-.naslov_gal_nam{
+
+.naslov_gal_nam {
     text-align: center;
-     padding-bottom: 30px;
-     padding-top: 80px;
+    padding-bottom: 30px;
+    padding-top: 80px;
 }
-.podnaslov{
+
+.podnaslov {
     text-align: center;
-     padding-bottom: 40px;
-     font-size:2.5em;
+    padding-bottom: 40px;
+    font-size: 2.5em;
     margin: 0;
 }
+
 .krugovi {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
 }
-.krug_tekst{
+
+.krug_tekst {
     text-align: center;
     /*width: 200px;*/
     padding-bottom: 50px;
 }
+
 .krug {
     background-image: url(../img/krug3.jpg);
     background-size: 100%;
@@ -284,23 +323,24 @@ a {
     margin: auto;
     border-radius: 50%;
 }
+
 /* ======== O NAMA -END========== :*/
 
-
-
-
-
 /* ======== HEADER ================== mobile:*/
+
 header {
     padding: 13px 0 8px;
 }
+
 .navigacija {
-    font-weight:500;
+    font-weight: 500;
     display: none;
 }
+
 .navigacija.open {
-display: table;
+    display: table;
 }
+
 nav {
     position: fixed;
     top: 0;
@@ -310,7 +350,8 @@ nav {
     background: #fff2f1;
     text-align: center;
     z-index: 100;
-    }
+}
+
 .linija_navigacije {
     display: table-cell;
     vertical-align: middle;
@@ -318,9 +359,11 @@ nav {
     margin: 0;
     padding: 50px 0;
 }
-nav li{
+
+nav li {
     margin-top: 10px;
 }
+
 nav a {
     color: #23080c;
     font-size: 3em;
@@ -328,6 +371,7 @@ nav a {
     padding: 8px 40px;
     font-weight: 300;
 }
+
 nav .close {
     width: 45px;
     height: 45px;
@@ -339,7 +383,9 @@ nav .close {
     background: transparent;
     border: none;
 }
+
 /* ====== prvi deo iksica \  x  :*/
+
 nav .close span {
     width: 35px;
     height: 2px;
@@ -347,15 +393,19 @@ nav .close span {
     display: block;
     transform: rotate(45deg);
 }
+
 /* ====== drugi deo iksica / x    :*/
+
 nav .close span:nth-child(2) {
     transform: rotate(-45deg);
     position: relative;
     top: -2px;
 }
+
 .header_logo {
     display: inline-block;
 }
+
 .burger {
     width: 44px;
     height: 25px;
@@ -365,6 +415,7 @@ nav .close span:nth-child(2) {
     background: transparent;
     border: none;
 }
+
 .burger span {
     width: 100%;
     height: 2px;
@@ -372,71 +423,80 @@ nav .close span:nth-child(2) {
     display: block;
     margin-top: 9px;
 }
+
 .burger span:nth-child(1) {
     margin-top: 0;
 }
-.btn{
+
+.btn {
     background-color: #a7204e;
     color: #ffffff;
     border-radius: 50px 50px 50px 50px;
     font-size: 3em;
 }
+
 .CTA {
     background-color: #a7204e;
     color: #ffffff;
     border-radius: 50px 50px 50px 50px;
     font-size: 2.5em;
-    padding:8px 40px;
+    padding: 8px 40px;
     white-space: nowrap;
 }
+
 .cta_center {
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
-    text-align: center; 
+    text-align: center;
     max-width: 200px;
     display: block;
     padding: 8px 0px;
-    }
+}
+
 /* ======== HEADER END ========== */
 
 /* ======== FUTER START ================== */
+
 .futer_sect ul {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        list-style: none;
-        padding-top: 45px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding-top: 45px;
 }
-.futer_sect li{
+
+.futer_sect li {
     padding-right: 16px;
 }
+
 .futer_sect {
     padding: 50px 0;
     background-color: #efe1de;
 }
-.razmak1{
+
+.razmak1 {
     padding-bottom: 15px;
 }
+
 .razmak {
-    padding-bottom:45px;
+    padding-bottom: 45px;
 }
+
 .footer_lista img {
     color: red;
 }
-.footer_lista p{
+
+.footer_lista p {
     justify-content: center;
     display: flex;
     margin: 0;
 }
+
 /* ======== FUTER end ================== */
 
-
-
-
-
-
 /* ======== Modal  ========== */
+
 .modal {
     display: none;
     position: fixed;
@@ -444,11 +504,13 @@ nav .close span:nth-child(2) {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(239,217,212,.6);
+    background-color: rgb(239, 217, 212, .6);
 }
+
 .modal.open {
     display: block;
 }
+
 .modal-wrap {
     max-width: 750px;
     width: 90%;
@@ -461,32 +523,39 @@ nav .close span:nth-child(2) {
     max-height: 90%;
     overflow-y: auto;
 }
+
 /*.modal-wrap .close12 span {
     background-color: #ebcfcf;
 }*/
+
 .modal-wrap h3 {
     text-align: center;
     font-family: 'Dosis';
     font-weight: 300;
 }
+
 .modal-inner {
     max-width: 520px;
     margin: 0 auto;
     text-align: center;
 }
+
 input {
-    border:none;
+    border: none;
     border-bottom: 3px solid #ebcfcf;
     /*width: 100%;*/
-    width: calc(100% - 40px); /* ===cals proracunava: 100% minus levi i desni padding po 20px==== */
+    width: calc(100% - 40px);
+    /* ===cals proracunava: 100% minus levi i desni padding po 20px==== */
     padding: 5px 15px;
     margin-bottom: 20px;
     font-size: 2.2em;
 }
+
 input::placeholder {
-  color: #b37e7e;
-  font-weight: 300;
+    color: #b37e7e;
+    font-weight: 300;
 }
+
 input.btn {
     max-width: 300px;
     margin: 0 auto;
@@ -497,7 +566,8 @@ input.btn {
     font-family: 'Dosis';
     font-weight: 300;
 }
-.vise{
+
+.vise {
     background-color: #ebcfcf;
     min-height: 70px;
     margin-bottom: 35px;
@@ -506,38 +576,46 @@ input.btn {
     font-weight: 300;
     border: solid #ebcfcf;
 }
-textarea::placeholder{
+
+textarea::placeholder {
     padding-left: 10px;
     color: #b37e7e;
 }
 
 /* ======== tri dugmeta ponude u modalu start ========== */
+
 .ponuda_modal {
     list-style: none;
     font-size: 2.4em;
     font-weight: 300;
 }
+
 .ponuda_modal li {
     display: inline-block;
     margin-right: 15px;
     padding-bottom: 20px;
 }
+
 .ponuda_modal input {
-    visibility:hidden;
+    visibility: hidden;
     display: none;
 }
+
 label {
     cursor: pointer;
-    padding:8px 20px;
+    padding: 8px 20px;
 }
-input:checked + label {
+
+input:checked+label {
     background: #ebcfcf;
     border-radius: 50px;
     width: 800px;
 }
+
 /* ======== tri dugmeta ponude u modalu  end  ========== */
 
 /* ispod je Close button za modal: */
+
 .close {
     width: 45px;
     height: 45px;
@@ -550,9 +628,11 @@ input:checked + label {
     background: transparent;
     border: 0;
 }
+
 .close:active {
     outline: 0;
 }
+
 .close span {
     width: 35px;
     height: 2px;
@@ -560,81 +640,79 @@ input:checked + label {
     display: block;
     transform: rotate(45deg);
 }
+
 .close span:nth-child(2) {
     transform: rotate(-45deg);
     position: relative;
     top: -2px;
 }
+
 /* ======== Modal end  ========== */
 
-
 @media only screen and (min-width: 600px) {
-/* ===odnosi se na minimalnu sirinu ekrana od 600px i VECE ekrane=== */
-
- /* ======== GALERIJA ========== */
-.hero {
-    /*background-image: url(../img/1.jpg);*/
-    /*background-size: 100%;*/
-    background-repeat: no-repeat;
-    background-position: center;
-    padding:80px;
-    min-height: 350px;
-    background-size: cover;
-}
-.prvi_slajd{
-    background-image: url(../img/1.jpg);
-}
-.drugi_slajd{
-    background-image: url(../img/2.jpg);
-}
-.treci_slajd{
-    background-image: url(../img/3.jpg);
-}
-
-.galerija:before{
-    height: 94%;
-    transform: skewY(14.5deg);
-    /*top: 6%;*/
-    top:9%;
+    /* ===odnosi se na minimalnu sirinu ekrana od 600px i VECE ekrane=== */
+    /* ======== GALERIJA ========== */
+    .hero {
+        /*background-image: url(../img/1.jpg);*/
+        /*background-size: 100%;*/
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 80px;
+        min-height: 350px;
+        background-size: cover;
     }
-.galll:before{
-    content: "";
-    left: 0;
-    top:-2%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url(../img/srednjaD.png) no-repeat;
-}
-.galll:after{
-    content:url(../img/srednjaL.png);
-    left: -30%;
-    top: 95%;
+    .prvi_slajd {
+        background-image: url(../img/1.jpg);
     }
-.deo_ponude {
-    width: 30%;
-    /*width: 300px;*/
+    .drugi_slajd {
+        background-image: url(../img/2.jpg);
     }
-.slike li{
-    width: 30%;
-    padding: 15px 0;
-}
+    .treci_slajd {
+        background-image: url(../img/3.jpg);
+    }
+    .galerija:before {
+        height: 94%;
+        transform: skewY(14.5deg);
+        /*top: 6%;*/
+        top: 9%;
+    }
+    .galll:before {
+        content: "";
+        left: 0;
+        top: -2%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: url(../img/srednjaD.png) no-repeat;
+    }
+    .galll:after {
+        content: url(../img/srednjaL.png);
+        left: -30%;
+        top: 95%;
+    }
+    .deo_ponude {
+        width: 30%;
+        /*width: 300px;*/
+    }
+    .slike li {
+        width: 30%;
+        padding: 15px 0;
+    }
 }
 
 /* ======== GALERIJA END ========== */
 
-
 @media only screen and (min-width: 1024px) {
     /* ===odnosi se na ekrane sa minimalnom širinom od 1024px i za vece od toga ekrane=== */
     /* ======== HEADER ========== web */
-    h1 { font-size: 6.25em;
-   }
+    h1 {
+        font-size: 6.25em;
+    }
     header {
         padding: 25px 0 10px;
     }
-    .navigacija,
-    .navigacija.open {
+    .navigacija, .navigacija.open {
         display: block;
     }
     nav {
@@ -658,59 +736,53 @@ input:checked + label {
         padding: 5px 10px;
         font-weight: 500;
     }
-    nav a.active,
-    nav a:hover {
+    nav a.active, nav a:hover {
         color: #23080c;
         border-bottom: 2.5px solid #a7204e;
     }
-    nav a,
-    nav a.btn {
+    nav a, nav a.btn {
         font-size: 1.8em;
     }
-    .burger,
-    nav .close,
-    .btn
-    {
+    .burger, nav .close, .btn {
         display: none;
     }
     .CTA {
-    background-color: #a7204e;
-    color: #ffffff;
-    border-radius: 50px;
-    font-size: 2.5em;
-    padding:8px 40px;
+        background-color: #a7204e;
+        color: #ffffff;
+        border-radius: 50px;
+        font-size: 2.5em;
+        padding: 8px 40px;
     }
     .cta_center {
-            margin-left: auto;
-            margin-right: auto;
-            display: inline-block;
-            text-align: center; 
-            max-width: 200px;
-            display: block;
-            padding: 8px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        text-align: center;
+        max-width: 200px;
+        display: block;
+        padding: 8px 0px;
     }
-
-/* ======== HEADER END ========== */
-.hero {
-    padding: 5% 20%;
-}
-/* ======== GAlerija ========== */
-.galll:before{
-    content:"";
-    left: 56%;
-    top:-25%;
-    width: 100%;
-    height: 100%;
-    background: url(../img/cvetic.png) no-repeat;
-}
-.galll:after{
-    content:url(../img/cveticdrugi.png);
-    left: -25%;
-    top: 80%;
-    width: 100%;
-    height: 50%;
-}
-/* ======== GALERIJA END ========== */
+    /* ======== HEADER END ========== */
+    .hero {
+        padding: 5% 20%;
+    }
+    /* ======== GAlerija ========== */
+    .galll:before {
+        content: "";
+        left: 56%;
+        top: -25%;
+        width: 100%;
+        height: 100%;
+        background: url(../img/cvetic.png) no-repeat;
+    }
+    .galll:after {
+        content: url(../img/cveticdrugi.png);
+        left: -25%;
+        top: 80%;
+        width: 100%;
+        height: 50%;
+    }
+    /* ======== GALERIJA END ========== */
 }
 
 /*
@@ -736,9 +808,11 @@ input:checked + label {
 /*
  * A better looking default horizontal rule
  */
+
 /*
  * pitanje: posto nemam u dizajnu hr da li ovo da obrisem iz ovog fajla]
  */
+
 hr {
     display: block;
     height: 1px;
@@ -754,12 +828,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
@@ -796,22 +865,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -842,7 +895,8 @@ textarea {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -851,8 +905,7 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -882,10 +935,11 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -902,10 +956,7 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -916,71 +967,52 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
+    *, *:before, *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster */
+        color: #000 !important;
+        /* Black prints faster */
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
     pre {
         white-space: pre-wrap !important;
     }
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
