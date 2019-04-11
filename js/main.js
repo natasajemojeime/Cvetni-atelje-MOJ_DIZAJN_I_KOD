@@ -20,7 +20,9 @@ $('nav a').on('click', function(event) {
 /* ======== slajder========== */
 $(window).on('load',function() {
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+    prevText: "",
+    nextText: ""
   });
 });
 /* ======== slajder END========== */
