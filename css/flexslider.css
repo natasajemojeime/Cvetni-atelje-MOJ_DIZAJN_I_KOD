@@ -152,48 +152,29 @@ html[xmlns] .flexslider .slides {
     -webkit-transform: rotate(-45deg);
     position: relative;
 }
-
 .flex-direction-nav a.flex-next:before {
   /*content: '\f002';*/
-   /*content: '';
-    border: solid black;*/
+   /*content: '';*/
     border-width: 0 3px 3px 0;
-    /*display: inline-block;
-    padding: 15px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    position: relative;*/
+    /*display: inline-block;*/
 }
-
-
 .flex-direction-nav a.flex-prev:before {
-   /*content: '';
-    border: solid black;*/
-    border-width: 3px 0 0 3px;
-   /* display: inline-block;
-    padding: 15px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    position: relative;*/
+    /*content: '';*/
+    border-width: 3px 0 0 3px;  
 }
+/*ovo sam menjala da bih dobila desnu strelicu - END*/
+
+
+
 
 .flex-direction-nav .flex-prev {
   left: -50px;
-  padding-left: 35px;
-
 }
 
 .flex-direction-nav .flex-next {
   right: -50px;
   text-align: right;
-  padding-right: 35px;
 }
-
-
-
-/*ovo sam menjala da bih dobila desnu strelicu ispod END*/
-
-
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 10px;

@@ -136,10 +136,14 @@ a {
     height: 40px;
     width: 40px;
     overflow: visible;
-    /*margin-right: 35px;*/
-    /*padding-right: 35px;*/
+}
+.flex-direction-nav .flex-prev {
+  padding-left: 35px;
 }
 
+.flex-direction-nav .flex-next {
+  padding-right: 35px;
+}
 /* ======== flex slajder END========== :*/
 
 /* ======== PONUDA START================== :*/
@@ -181,6 +185,8 @@ a {
     background-color: #ebcfcf;
     border-radius: 50px 50px 50px 50px;
 }
+
+
 
 /*#organizacija, #dekoracija {
     display: none;
@@ -468,7 +474,7 @@ nav .close span:nth-child(2) {
     flex-flow: row wrap;
     justify-content: space-around;
     list-style: none;
-    padding-top: 45px;
+    padding-top: 25px;
 }
 
 .futer_sect li {
@@ -612,6 +618,8 @@ textarea::placeholder {
 label {
     cursor: pointer;
     padding: 8px 20px;
+    border: 2px solid transparent;
+    border-radius: 50px;
 }
 
 input:checked+label{
@@ -623,6 +631,7 @@ input:checked+label{
     background: #faf3f3;
     border-radius: 50px;
     width: 800px;
+    border-color: #c15378;
 }
 /* ======== tri dugmeta ponude u modalu  end  ========== */
 
