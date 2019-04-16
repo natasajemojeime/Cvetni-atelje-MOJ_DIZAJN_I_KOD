@@ -1,15 +1,17 @@
+
+
 /* ======== navigacija========== */
-$('.burger').on('click', function(event) {
+$('.burger').on('click', function (event) {
   event.preventDefault();
   $('.navigacija').addClass('open');
- });
-$('.navigacija .close').on('click', function(event) {
+});
+$('.navigacija .close').on('click', function (event) {
   event.preventDefault();
   $('.navigacija').removeClass('open');
 });
 
 
-$('nav a').on('click', function(event) {
+$('nav a').on('click', function (event) {
   $('.navigacija').removeClass('open');
 });
 
@@ -18,7 +20,7 @@ $('nav a').on('click', function(event) {
 
 
 /* ======== slajder========== */
-$(window).on('load',function() {
+$(window).on('load', function () {
   $('.flexslider').flexslider({
     animation: "slide",
     prevText: "",
@@ -32,24 +34,24 @@ $(window).on('load',function() {
 /* ======== menjanje ponude na tri dugmeta========== */
 $('.ponuda').hide();
 $('#aranzmani').show();
-$('.izbor_ponude').click(function(e) {
-    e.preventDefault();
-    $('.izbor_ponude').removeClass('aktivno');
-    $(this).addClass('aktivno');
-    $('.ponuda').hide();
-    $('#' + $(this).attr('title')).show();
+$('.izbor_ponude').click(function (e) {
+  e.preventDefault();
+  $('.izbor_ponude').removeClass('aktivno');
+  $(this).addClass('aktivno');
+  $('.ponuda').hide();
+  $('#' + $(this).attr('title')).show();
 });
 /* ======== ponuda END========== */
 
 
 
 /* ======== modal open i close========== */
-$('.CTA').on('click', function(event) {
+$('.CTA').on('click', function (event) {
   event.preventDefault();
   /* Act on the event */
   $('.modal').addClass('open');
 });
-$('.modal .close').on('click', function(event) {
+$('.modal .close').on('click', function (event) {
   event.preventDefault();
   /* Act on the event */
   $('.modal').removeClass('open');
@@ -60,11 +62,11 @@ $('.modal .close').on('click', function(event) {
 
 /* ======== modal date picker ========== */
 var dateToday = new Date();
-$( function() {
-  $( "#datum" ).datepicker({
+$(function () {
+  $("#datum").datepicker({
     changeMonth: true,
     changeYear: true,
-    dateFormat:'dd-M-yy',
+    dateFormat: 'dd-M-yy',
     minDate: dateToday
   });
 });

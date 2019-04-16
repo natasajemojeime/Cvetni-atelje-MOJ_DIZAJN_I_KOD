@@ -12,6 +12,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -219,31 +220,31 @@
       <h2 class="naslov_gal_nam">Galerija</h2>
       <ul class="slike">
         <li>
-          <img src="img/prva.jpg">
+          <a data-fancybox="gallery" href="img/22851693_2092397900995326_2746013372366524126_n.jpg"><img src="img/prva.jpg"></a>
         </li>
         <li>
-          <img src="img/druga.jpg">
+          <a data-fancybox="gallery" href="img/25659678_2092403750994741_4317112731894508771_n.jpg"><img src="img/druga.jpg"></a>
         </li>
         <li>
-          <img src="img/treca.jpg">
+          <a data-fancybox="gallery" href="img/20246372_2022473564654427_8553412135130810970_n.jpg"><img src="img/treca.jpg"></a>
         </li>
         <li>
-          <img src="img/cetvrta.jpg">
+          <a data-fancybox="gallery" href="img/24b4d173ca29a0fb206e2f3eab2dbf20.jpg"><img src="img/cetvrta.jpg"></a>
         </li>
         <li>
-          <img src="img/peta.jpg">
+          <a data-fancybox="gallery" href="img/7f414758ec1adbb3c89dc307ffd8b887.jpg"><img src="img/peta.jpg"></a>
         </li>
         <li>
-          <img src="img/sesta.jpg">
+          <a data-fancybox="gallery" href="img/photo-1487530811176-3780de880c2d.jpg"><img src="img/sesta.jpg"></a>
         </li>
         <li>
-          <img src="img/sedma.jpg">
+          <a data-fancybox="gallery" href="img/sweet-ice-cream-photography-90425-unsplash.jpg"><img src="img/sedma.jpg"></a>
         </li>
         <li>
-          <img src="img/osma.jpg">
+          <a data-fancybox="gallery" href="img/dffc04b9588a565b615594c990179f84.jpg"><img src="img/osma.jpg"></a>
         </li>
         <li>
-          <img src="img/deveta.jpg">
+          <a data-fancybox="gallery" href="img/roman-kraft-208004-unsplash.jpg"><img src="img/deveta.jpg"></a>
         </li>
       </ul>
     </div>
@@ -315,8 +316,8 @@
         <li class="footer_lista">
           <p>cvetniateljesan@gmail.com</p>
           <!-- <div> -->
-            <p>Ponedeljak - Subota: 8-22h</p>
-            <p>Nedelja: 8-20h</p>
+          <p>Ponedeljak - Subota: 8-22h</p>
+          <p>Nedelja: 8-20h</p>
           <!-- </div> -->
           <a class="CTA" href="">Angažujte nas</a>
         </li>
@@ -349,15 +350,15 @@
               </li>
             </ul>
 
-            <input type="text" id="datum" name="zeljeni_datum" placeholder="unesite željeni datum">
+            <input type="text" id="datum" name="zeljeni_datum" placeholder="datum isporuke ili događaja">
 
-            <input type="text" name="ime" placeholder="unesite ime" class="width__2">
+            <input type="text" name="ime" placeholder="ime i prezime" class="width__2">
 
             <input type="number" name="telefon" placeholder="kontakt telefon">
 
-            <textarea class="vise" name="pismo" placeholder="recite nam više"></textarea>
+            <textarea class="vise" name="pismo" placeholder="napišite nam dodatne detalje"></textarea>
 
-            <input type="submit" value="slanje" class="btn">
+            <input type="submit" value="pošaljite" class="btn">
 
           </fieldset>
         </form>
@@ -385,7 +386,7 @@
 
   <!--izgled slajdera je ispod i ovo uvek ide ispid jquerija jer je ovo plagin -->
   <script src="js/jquery.flexslider.js"></script>
-  </script>
+  <script src="js/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

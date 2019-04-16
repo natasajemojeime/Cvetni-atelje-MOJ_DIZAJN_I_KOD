@@ -80,6 +80,7 @@ section {
 a {
     text-decoration: none;
 }
+
 .hero {
     /*background-image: url(../img/mob1.jpg);*/
     /*background-size: 100%;*/
@@ -90,6 +91,12 @@ a {
     min-height: 350px;
     background-size: cover;
 }
+
+.hero p {
+    padding-bottom: 20px;
+    font-size: 2em;
+}
+
 .prvi_slajd {
     background-image: url(../img/mob1.jpg);
 }
@@ -137,13 +144,15 @@ a {
     width: 40px;
     overflow: visible;
 }
+
 .flex-direction-nav .flex-prev {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 .flex-direction-nav .flex-next {
-  padding-right: 20px;
+    padding-right: 20px;
 }
+
 /* ======== flex slajder END========== :*/
 
 /* ======== PONUDA START================== :*/
@@ -153,7 +162,7 @@ a {
 }
 
 .izbor_ponude {
-    font-size: 2.8em;
+    font-size: 2.4em;
 }
 
 .naslov_ponuda {
@@ -165,6 +174,7 @@ a {
 .podnaslov_ponude {
     font-size: 2.2em;
     vertical-align: middle;
+    margin-bottom: 0;
 }
 
 .ponuda_sve3 p {
@@ -186,15 +196,13 @@ a {
     border-radius: 50px 50px 50px 50px;
 }
 
-
-
 /*#organizacija, #dekoracija {
     display: none;
 }*/
 
 .dugmad_ponude {
     text-align: center;
-    margin: 30px 0;
+    padding: 50px 0;
 }
 
 .deo_ponude img {
@@ -249,11 +257,8 @@ a {
     /*overflow: hidden;*/
 }
 
-.galerija:before
-/*,
-.galerija:after*/
-
-    {
+.galerija:before{
+    top: 3%;
     content: '';
     position: absolute;
     background: #efe1de;
@@ -263,22 +268,16 @@ a {
     z-index: -2;
 }
 
-.galerija:before {
-    top: 3%;
-    content: '';
-}
-
 .galll:before {
+    background: url(../img/cveticmanji.png) no-repeat;
     /*content:url(../img/cveticmanji.png);*/
     content: "";
-    /*left: 30%;*/
     left: 30%;
     top: -2%;
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url(../img/cveticmanji.png) no-repeat;
 }
 
 .galll:after {
@@ -316,8 +315,7 @@ a {
 
 .krug_tekst {
     text-align: center;
-    /*width: 200px;*/
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .krug {
@@ -449,10 +447,11 @@ nav .close span:nth-child(2) {
 .CTA {
     background-color: #a7204e;
     color: #ffffff;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px;
     font-size: 2.5em;
     padding: 8px 40px;
     white-space: nowrap;
+    font-weight: 300;
 }
 
 .cta_center {
@@ -463,6 +462,12 @@ nav .close span:nth-child(2) {
     max-width: 200px;
     display: block;
     padding: 8px 0px;
+}
+
+.CTA:hover {
+    background: #b74068;
+    border-radius: 50px;
+    border-color: red;
 }
 
 /* ======== HEADER END ========== */
@@ -503,10 +508,20 @@ nav .close span:nth-child(2) {
     display: flex;
     margin: 0;
 }
-.footer_lista .CTA{
+
+.footer_lista .CTA {
     margin-top: 20px;
     display: block;
 }
+
+.footer_lista a:hover {
+    opacity: 0.8;
+}
+
+.futermail {
+    color: #921c44;
+}
+
 /* ======== FUTER end ================== */
 
 /* ======== Modal  ========== */
@@ -563,6 +578,7 @@ input {
     padding: 5px 15px;
     margin-bottom: 20px;
     font-size: 2.2em;
+    font-weight: 300;
 }
 
 input::placeholder {
@@ -571,10 +587,10 @@ input::placeholder {
 }
 
 input.btn {
-    max-width: 300px;
+    max-width: 200px;
     margin: 0 auto;
     display: block;
-    padding: 13px 15px;
+    padding: 10px 15px;
     border: none;
     font-size: 2.6em;
     font-family: 'Dosis';
@@ -622,16 +638,18 @@ label {
     border-radius: 50px;
 }
 
-input:checked+label{
+input:checked+label {
     background: #ebcfcf;
     border-radius: 50px;
     width: 800px;
 }
-.ponuda_modal label:hover{
+
+.ponuda_modal label:hover {
     border-radius: 50px;
     width: 800px;
     border-color: #c15378;
 }
+
 /* ======== tri dugmeta ponude u modalu  end  ========== */
 
 /* ispod je Close button za modal: */
@@ -673,13 +691,14 @@ input:checked+label{
     /* ===odnosi se na minimalnu sirinu ekrana od 600px i VECE ekrane=== */
     /* ======== GALERIJA ========== */
     .hero {
-        /*background-image: url(../img/1.jpg);*/
-        /*background-size: 100%;*/
         background-repeat: no-repeat;
         background-position: center;
         padding: 80px;
         min-height: 350px;
         background-size: cover;
+    }
+    .hero p {
+        font-size: 2.5em;
     }
     .prvi_slajd {
         background-image: url(../img/1.jpg);
@@ -692,8 +711,6 @@ input:checked+label{
     }
     .galerija:before {
         height: 94%;
-        transform: skewY(14.5deg);
-        /*top: 6%;*/
         top: 9%;
     }
     .galll:before {
@@ -720,14 +737,15 @@ input:checked+label{
         /*padding: 15px 0;*/
         padding-bottom: 3.333% 0;
     }
-
-
     /*slajder strelice peding*/
     .flex-direction-nav .flex-prev {
         padding-left: 35px;
     }
     .flex-direction-nav .flex-next {
         padding-right: 35px;
+    }
+    .krug_tekst {
+        padding-bottom: 50px;
     }
 }
 
@@ -775,31 +793,6 @@ input:checked+label{
     }
     .burger, nav .close, .btn {
         display: none;
-    }
-    .CTA {
-        background-color: #a7204e;
-        color: #ffffff;
-        border-radius: 50px;
-        font-size: 2.5em;
-        padding: 8px 40px;
-        font-weight: 300;
-    }
-
-    .CTA:hover{
-    background: #b74068;
-    border-radius: 50px;
-    width: 800px;
-    border-color: red;
-    
-    }
-    .cta_center {
-        margin-left: auto;
-        margin-right: auto;
-        display: inline-block;
-        text-align: center;
-        max-width: 200px;
-        display: block;
-        padding: 8px 0px;
     }
     /* ======== HEADER END ========== */
     .hero {
