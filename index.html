@@ -314,11 +314,11 @@
         </li>
 
         <li class="footer_lista">
-          <p>cvetniateljesan@gmail.com</p>
-          <!-- <div> -->
+          <p>
+            <a class="futermail" href="mailto:cvetniateljesan@gmail.com">cvetniateljesan@gmail.com</a>
+          </p>
           <p>Ponedeljak - Subota: 8-22h</p>
           <p>Nedelja: 8-20h</p>
-          <!-- </div> -->
           <a class="CTA" href="">Angažujte nas</a>
         </li>
 
@@ -350,11 +350,11 @@
               </li>
             </ul>
 
-            <input type="text" id="datum" name="zeljeni_datum" placeholder="datum isporuke ili događaja">
+            <input type="text" autocomplete="off" id="datum" name="zeljeni_datum" placeholder="datum isporuke ili događaja" required>
 
-            <input type="text" name="ime" placeholder="ime i prezime" class="width__2">
+            <input type="text" autocomplete="off" name="ime" placeholder="ime i prezime" class="width__2" required>
 
-            <input type="number" name="telefon" placeholder="kontakt telefon">
+            <input type="tel" autocomplete="off" pattern="0[0-9]{2}[0-9]{3}[0-9]{4}" name="telefon" placeholder="kontakt telefon" required>
 
             <textarea class="vise" name="pismo" placeholder="napišite nam dodatne detalje"></textarea>
 
